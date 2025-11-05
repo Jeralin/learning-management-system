@@ -219,7 +219,7 @@ export const dummyStudentEnrolled = [
         "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycVFsdmFMSkw3ckIxNHZMU2o4ZURWNEtmR2IifQ",
     },
     courseTitle: "Web Development Bootcamp",
-    purchaseDate: "2024-12-20T11:04:48.798Z",
+    purchaseDate: "2025-12-20T11:04:48.798Z",
   },
 ];
 
@@ -293,7 +293,7 @@ export const dummyCourses = [
         _id: "6773e37360cb0ab974342314",
       },
     ],
-    createdAt: "2024-12-17T08:16:53.622Z",
+    createdAt: "2025-12-17T08:16:53.622Z",
     updatedAt: "2025-01-02T04:47:44.701Z",
     __v: 4,
     courseThumbnail:
@@ -367,7 +367,7 @@ export const dummyCourses = [
         _id: "6776369244daad0f313d81a9",
       },
     ],
-    createdAt: "2024-12-17T08:16:53.622Z",
+    createdAt: "2025-12-17T08:16:53.622Z",
     updatedAt: "2025-01-02T06:47:54.446Z",
     __v: 3,
     courseThumbnail:
@@ -435,8 +435,8 @@ export const dummyCourses = [
       "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
     ],
     courseRatings: [],
-    createdAt: "2024-12-27T11:30:00.000Z",
-    updatedAt: "2024-12-31T04:14:49.773Z",
+    createdAt: "2025-12-27T11:30:00.000Z",
+    updatedAt: "2025-12-31T04:14:49.773Z",
     __v: 2,
     courseThumbnail:
       "https://oracle-devrel.github.io/devo-image-repository/seo-thumbnails/JavaScript---Thumbnail-1200-x-630.jpg",
