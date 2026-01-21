@@ -7,6 +7,7 @@ const CourseCard = ({ course }) => {
   const { currency, calculateRating } = useContext(AppContext);
 
   console.log("Course received in CourseCard:", course);
+  // console.log("Course Data:", course);
 
   return (
     <Link
@@ -19,7 +20,10 @@ const CourseCard = ({ course }) => {
         <h3 className="text-white text-base font-semibold">
           {course?.courseTitle}
         </h3>
-        <p className="text-white">Spidey</p>
+        <p className="text-white">
+          {course?.educator?.name || "Unknown Tutor"}
+        </p>
+
         <div className="flex items-center space-x-2">
           <p className="text-white">{calculateRating(course ?? {})}</p>
           <div className="flex">
