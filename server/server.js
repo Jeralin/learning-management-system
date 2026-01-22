@@ -16,8 +16,31 @@ const app = express();
 await connectDB();
 await connectCloudinary();
 
+// 👇 REPLACE THE OLD CORS LINE WITH THIS BLOCK 👇
+const allowedOrigins = [
+  "http://localhost:5173", // Keep this for local development
+  "https://learning-management-system-frontend-seven.vercel.app", // Your deployed frontend
+];
+
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      // Allow requests with no origin (like mobile apps or curl requests)
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.indexOf(origin) === -1) {
+        const msg =
+          "The CORS policy for this site does not allow access from the specified Origin.";
+        return callback(new Error(msg), false);
+      }
+      return callback(null, true);
+    },
+    credentials: true, // Important for headers/cookies
+  }),
+);
+// 👆 END OF NEW CODE 👆
+
 // Middlewares
-app.use(cors());
+// app.use(cors());
 app.use(clerkMiddleware());
 
 // Routes

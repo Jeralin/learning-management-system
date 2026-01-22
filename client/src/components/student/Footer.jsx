@@ -48,12 +48,14 @@ const Footer = () => {
               placeholder="Enter your email"
               className="border border-white/80 bg-gray-100 text-black placeholder-gray-500 outline-none w-64 h-9 rounded px-2 text-sm"
             />
-            <button className="bg-orange-500 w-24 h-9 rounded">Subscribe</button>
+            <button className="bg-orange-500 w-24 h-9 rounded">
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
       <p className="py-4 text-center text-xs md:text-sm text-black/60">
-        Copyright 2025 © Skillup. All Rights Reserved.
+        Copyright 2026 © Skillup. All Rights Reserved.
       </p>
     </footer>
   );
